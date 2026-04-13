@@ -137,12 +137,6 @@ On phase transition, ε is partially rewound (`step × 0.6`) to re-open explorat
 ```bash
 # Final agent (Hybrid DRQN)
 python train_hierarchical_hybrid.py --obelix_py obelix.py --episodes 3000 --out weights/hybrid.pth
-# Unified diff3 agent
-python train_diff3.py --obelix_py obelix.py --episodes 800 --out weights/diff3/weights_diff3.pth
-# Recurrent PPO
-python train_recurrent_ppo.py --obelix_py obelix.py --episodes 2000 --out weights/ppo.pth
-# D3QN-PER baseline
-python train_d3qn_per.py --obelix_py obelix.py --episodes 2000 --out weights/d3qn.pth
 ```
 ---
 ## Evaluation
@@ -160,9 +154,6 @@ python manual_play.py --obelix_py obelix.py
 | File | Agent | Size |
 |------|-------|------|
 | `weights_hybrid_diff3.pth` | Hybrid DRQN (final, best) | 7.3 MB |
-| `weights_drqn_diff3.pth` | Unified DRQN | 540 KB |
-| `weights_hier_l3.pth` | Hierarchical DRQN | 4.4 MB |
-| `weights_adv_d3.pth` | Advanced agent (D3) | 595 KB |
 ---
 ## Requirements
 ```
