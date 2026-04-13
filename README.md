@@ -68,11 +68,6 @@ Sonar FOV: 20° per cone | Far range: 150px | Near range: 90px | IR range: 20px
 | File | Description |
 |------|-------------|
 | `agent_hierarchical_hybrid.py` | **Final submitted agent** — Hybrid Hierarchical DRQN |
-| `agent_diff3.py` | Unified DRQN for difficulty 3 (72-dim features, single network) |
-| `agent_recurrent_ppo.py` | Recurrent PPO actor-critic |
-| `agent_hierarchical_drqn.py` | Hierarchical DRQN (per-phase networks, no engineered features) |
-| `agent_d3qn.py` | D3QN-PER baseline (frame stacking, no LSTM) |
-| `agent.py` | Submission entry point |
 ---
 ## Architecture: Hybrid Hierarchical DRQN
 ### Feature Vector (64-dim)
