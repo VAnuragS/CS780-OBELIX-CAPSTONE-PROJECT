@@ -1,6 +1,6 @@
 # CS780 Capstone — OBELIX Warehouse Robot
 **Student:** Vemula Anurag Sai (231138) | anuragsv23@iitk.ac.in  
-**Codabench Username:** v_231138 | **Final Rank:** 12
+**Codabench Username:** v_231138 | **Final Rank:** 17
 ---
 ## Problem
 OBELIX is a partially observable robotic control task. A mobile robot must:
