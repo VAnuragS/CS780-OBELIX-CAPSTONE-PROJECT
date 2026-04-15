@@ -123,16 +123,6 @@ Input(64) → FC(256) → LayerNorm → ReLU → LSTM(256) → LayerNorm
 | 3 | 1500 – 2500 | 2 (blinking) | Yes |
 | 4 | 2500+ | 3 (moving+blinking) | Yes |
 On phase transition, ε is partially rewound (`step × 0.6`) to re-open exploration.
-### Reward Shaping (on top of env reward)
-| Signal | Shaped bonus |
-|--------|-------------|
-| Stuck normalisation | +191 (makes net stuck cost ≈ −10 instead of −200) |
-| Escape stuck | +30 |
-| Sonar approach (curr > prev) | +2.0 |
-| Sonar contact (any active) | +0.3 |
-| IR activation (first contact) | +5.0 |
-| Sustained IR (pushing) | +1.0 |
-| IR lost mid-episode | −3.0 |
 ### Commands
 ```bash
 # Final agent (Hybrid DRQN)
